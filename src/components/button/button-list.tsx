@@ -1,20 +1,17 @@
 import React, { HTMLProps } from 'react';
+import clsx from 'clsx';
+import styles from './button-list.module.scss';
 
-// export const ButtonList = styled.div<JustifyContentProps>`
-// 	display: flex;
-// 	flex-grow: 1;
-// 	margin: 0 -0.325rem;
-//
-// 	& .button {
-// 		margin: 0 0.325rem;
-// 	}
-//
-// 	${compose(justifyContent)}
-// `;
+type ButtonListProps = HTMLProps<HTMLDivElement>;
 
-export const ButtonList: React.FC<HTMLProps<HTMLDivElement>> = ({
+export const ButtonList: React.FC<ButtonListProps> = ({
+	className,
 	children,
 	...props
 }) => {
-	return <div {...props}>{children}</div>;
+	return (
+		<div {...props} className={clsx(styles['button-list'], className)}>
+			{children}
+		</div>
+	);
 };
