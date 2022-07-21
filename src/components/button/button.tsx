@@ -67,7 +67,7 @@ export const Button: React.FC<ButtonProps> = ({
 		>
 			<div
 				className={clsx(styles.button__content, 'button__content', {
-					[styles.button__contentAlign]: alignContent,
+					[styles['button__content--align']]: alignContent,
 				})}
 			>
 				{label && (
