@@ -64,7 +64,7 @@
 		width: calc(100% + 2px);
 		height: calc(100% + 2px);
 		border-radius: 0.25rem;
-		background-color: map-get($colors, 'primary');
+		background-color: map-get($colors, 'accent');
 		opacity: 0;
 		transform: translate(-50%, -50%);
 		transition: opacity 0.3s cubic-bezier(0.54, 1.7, 0.5, 1);

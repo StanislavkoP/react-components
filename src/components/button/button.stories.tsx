@@ -20,9 +20,9 @@ const Template: Story<ButtonProps> = (args) => (
 	</>
 );
 
-export const Primary = Template.bind({});
+export const Standart = Template.bind({});
 
-Primary.args = {
+Standart.args = {
 	variant: 'primary',
 	label: 'Primary Button',
 };

@@ -26,8 +26,8 @@
 
 	&--primary {
 		color: map-get($colors, 'white');
-		background-color: map-get($colors, 'primary');
-		border-color: map-get($colors, 'primary'),
+		background-color: map-get($colors, 'accent');
+		border-color: map-get($colors, 'accent');
 	}
 
 	&--primary-outlined {
