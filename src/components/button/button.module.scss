@@ -1,15 +1,5 @@
 @import 'assets/styles/variables';
 
-
-.button__content {
-	display: flex;
-	align-items: center;
-
-	&--align {
-		margin: 0 auto;
-	}
-}
-
 .button {
 	position: relative;
 	display: inline-flex;
@@ -71,6 +61,16 @@
 	}
 }
 
+.button__content {
+	display: flex;
+	align-items: center;
+	transition: opacity 0.3s ease;
+
+	&--align {
+		margin: 0 auto;
+	}
+}
+
 .button__label {}
 
 
@@ -83,7 +83,7 @@
 	}
 }
 
-.button__spinner {
+.button__spinner.button__spinner {
 	position: absolute;
 	top: 50%;
 	left: 50%;
