@@ -1,4 +1,4 @@
-$primary: #14295E;
+@import 'assets/styles/variables';
 
 @keyframes rotate-animation {
 	from {
@@ -15,7 +15,7 @@ $primary: #14295E;
 	width: 25px;
 	height: 25px;
 	margin: 0 auto;
-	color: $primary;
+	color: map-get($colors, 'primary');
 	border-radius: 100%;
 
 	&::after {

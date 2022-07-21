@@ -1,8 +1,8 @@
-$primary: #14295E;
+@import 'assets/styles/variables';
 
 .icon {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	color: $primary;
+	color: map-get($colors, 'primary');
 }

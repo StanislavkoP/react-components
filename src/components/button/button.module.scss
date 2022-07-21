@@ -1,5 +1,4 @@
-$primary: #14295E;
-$white: #fff;
+@import 'assets/styles/variables';
 
 
 .button__content {
@@ -36,18 +35,18 @@ $white: #fff;
 	}
 
 	&--primary {
-		color: $white;
-		background-color: $primary;
-		border-color: $primary,
+		color: map-get($colors, 'white');
+		background-color: map-get($colors, 'primary');
+		border-color: map-get($colors, 'primary'),
 	}
 
 	&--primary-outlined {
-		color: $primary;
-		border-color: $primary,
+		color: map-get($colors, 'primary');
+		border-color: map-get($colors, 'primary'),
 	}
 
 	&--primary-ghost {
-		color: $primary;
+		color: map-get($colors, 'primary');
 		border-color: transparent;
 	}
 
